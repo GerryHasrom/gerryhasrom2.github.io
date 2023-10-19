@@ -1,0 +1,100 @@
+/* Terapkan gaya ke seluruh kontainer formulir */
+.cool-card {
+  text-align: center;
+  position: absolute;
+  width: 50%; /* Sesuaikan lebar kartu sesuai kebutuhan */
+  left: 20%; /* Sesuaikan posisi kartu jika diperlukan */
+  top: 50px; /* Sesuaikan posisi kartu jika diperlukan */
+  overflow: hidden;
+  background: rgba(255, 102, 0, 0.6);
+  padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+  border-radius: 7px;
+  height: auto; /* Sesuaikan tinggi kartu sesuai kebutuhan */
+}
+
+input[type="submit"] {
+  width: 10%; /* Tombol lebar penuh */
+  padding: 10px 20px;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.0725);
+  border: 2px solid #fff;
+  border-radius: 5px; 
+  font-size: 15px; 
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  margin-top: 10px; 
+}
+
+
+
+
+
+/* Terapkan gaya hover ke tombol "Save" dan "View" */
+input[type="submit"]:hover,
+button:hover {
+  color: #222;
+  background: #999;
+}
+
+
+
+/* Terapkan gaya ke tombol "Lihat" */
+button {
+  width: 25%; /* Tombol lebar penuh */
+  padding: 13pt;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.0725);
+  border: 2pt solid #fff;
+  border-radius: 100pt;
+  font-size: 15pt;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  margin-top: 10pt; /* Tambahkan margin di atas */
+
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  color: #222;
+  background: #999;
+}
+
+/* Untuk membuat kolom input berada di bawah setiap label */
+.cool-card form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cool-card form input {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+/* Gaya khusus untuk tombol "View" */
+.view-button {
+  width: 25%; /* Tombol lebar penuh */
+  padding: 13px;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.0725);
+  border: 2px solid #fff;
+  border-radius: 5px; /* Ubah border-radius untuk tampilan yang lebih rapi */
+  font-size: 15px; /* Ubah ukuran font */
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+/* Gaya saat tombol "View" dihover */
+.view-button:hover {
+  color: #222;
+  background: #999;
+}

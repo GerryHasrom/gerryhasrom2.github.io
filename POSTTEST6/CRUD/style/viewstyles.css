@@ -1,0 +1,76 @@
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#waktu_dashboard {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    margin-right: 10px;
+    color: yellow;
+}
+
+.header h1 {
+    margin-left: 10px;
+}
+
+.table-container {
+    margin: 0 30px; 
+    max-width: 800px; 
+    background-color: orange;
+}
+
+.create-button-container {
+    text-align: right; 
+    margin-right: 80px;
+}
+
+.create-button {
+    background-color: #0074d9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.table-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+    margin-top: 30px;
+}
+
+
+.table-container td {
+    background-color: rgb(255, 255, 255); 
+    text-align: center;
+    
+}
+
+.table-container th {
+    background-color: orange; 
+    
+}
+
+.table-container td, .table-container th {
+    border: 1px solid black; 
+}
+
+/* CSS untuk tautan "Edit" dan "Delete" */
+.table-container td a.edit-link,
+.table-container td a.delete-link {
+    color: #0074d9; /* Warna tautan aslinya */
+    text-decoration: none;
+    transition: color 0.3s; /* Animasi perubahan warna saat hover selama 0.3 detik */
+}
+
+/* CSS untuk animasi hover */
+.table-container td a.edit-link:hover,
+.table-container td a.delete-link:hover {
+    color: #0056b3; /* Ganti warna saat dihover */
+}

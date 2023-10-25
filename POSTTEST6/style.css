@@ -1,0 +1,633 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0000CD;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo h1 {
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  padding-left: 1%;
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #fda602;
+}
+
+.navbar-search {
+  margin-right: 20px;
+  position: relative;
+}
+
+#search {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 200px;
+  background-color: white; 
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.5s, box-shadow 0.3s; 
+  position: relative;
+}
+
+#search:focus {
+  background-color: #ffea00; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  outline: none;
+}
+
+.search-label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+}
+
+.search-label i {
+  font-size: 18px;
+}
+
+/* Home */
+.home {
+  background-color: #ffffff; 
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-card {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7; 
+  z-index: -1;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px;
+}
+
+.card-overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card-overlay p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header-content {
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* About Me */
+.about {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  transition: transform 0.2s; 
+}
+
+.about-card:hover {
+  transform: translateY(-5px); 
+}
+
+.about-card img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.about-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Social Media */
+.social-media {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #555;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+/* Isi Konten */
+.content {
+  background-color: #e6e6e6;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+}
+
+.content-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(25% - 20px);
+  margin: 10px;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-card img {
+  width: 100%;
+  max-height: 200px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.content-card p {
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0000CD;
+  padding: 10px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 60px; 
+  height: auto;
+}
+
+.footer-text {
+  color: #f1c40f;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+#added-text {
+  font-size: 16px;
+}
+
+/* Efek animasi pada harga */
+.animated-price {
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s; 
+}
+
+.animated-price:hover {
+  color: #f1c40f;
+}
+
+/* Media untuk Layar Kecil */
+@media screen and (max-width: 768px) {
+  .about-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Ukuran Teks pada Layar Kecil */
+@media screen and (max-width: 768px) {
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about-card h1 {
+    font-size: 28px;
+  }
+
+  .about-card p {
+    font-size: 16px;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #2c041c;
+  color: #cc7722; 
+}
+
+body.dark-mode .home {
+  background-color: #2b2b2b; 
+}
+
+body.dark-mode .header {
+  background-color: #2b2b2b; 
+  color: #ffffff; 
+}
+
+body.dark-mode .about {
+  background-color: #2b2b2b; 
+}
+
+body.dark-mode .content {
+  background-color: #2b2b2b; 
+}
+
+body.dark-mode .content-card,
+body.dark-mode .about-card {
+  background-color: #ffffff; 
+  color: #000000; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+body.dark-mode .content-card h3,
+body.dark-mode .about-card h1 {
+  color: #000000; 
+}
+
+body.dark-mode .footer {
+  background-color: #2c041c; 
+  color: #ffffff; 
+}
+
+body.dark-mode .animated-price:hover {
+  color: red; 
+}
+
+body.dark-mode .card-overlay {
+  background-color: #8b4000;
+}
+
+body.dark-mode .about-card-content {
+  background-color: #ffbf00;
+}
+
+body.dark-mode .about-card {
+  background-color: #ffbf00;
+}
+
+body.dark-mode .content-card {
+  background-color: #ffbf00;
+}
+
+body.dark-mode .navbar-logo h1 {
+  color: #cc7722;
+}
+
+body.dark-mode .content-card p {
+  color: white;
+}
+
+/* Gaya elemen jam */
+.clock {
+  font-size: 24px;
+  color: orange;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Gaya untuk tombol dark mode */
+#dark-mode-toggle {
+  background-color: #333; 
+  color: #fff; 
+  border: none; 
+  border-radius: 50px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Gaya saat mengarahkan kursor ke tombol */
+#dark-mode-toggle:hover {
+  background-color: #d4a238; 
+}
+
+/* Perubahan pada bagian Contact */
+
+/* Gaya saat mengarahkan kursor ke tombol */
+#dark-mode-toggle:hover {
+  background-color: #d4a238; 
+}
+
+/* Perubahan pada bagian Contact */
+.contact-container {
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.5s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.contact-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-container form {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.contact-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="number"],
+.contact-container select,
+.contact-container textarea,
+.contact-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-container textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-container input[type="password"] {
+  font-family: monospace;
+}
+
+/* Show/Hide Password Style */
+.show-password-label {
+  display: block; /* Membuat label tampil sebagai blok */
+  text-align: right; /* Mengatur posisi label ke kanan */
+  margin-top: 10px;
+}
+
+.show-password-checkbox {
+  float: right; /* Mengatur posisi tombol ke kanan */
+  margin-left: 5px; /* Memberikan sedikit jarak antara tombol dan label */
+}
+
+.contact-container button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.contact-container button:hover {
+  background-color: #0056b3; 
+}
+
+/* Light mode styles for Contact container */
+body:not(.dark-mode) .contact-container {
+  background-color: #d0a47e;
+}
+
+body:not(.dark-mode) .contact-container button {
+  background-color: #007BFF;
+}
+
+body:not(.dark-mode) .contact-container button:hover {
+  background-color: #0000FF;
+}
+
+/* Dark mode styles for Contact container */
+body.dark-mode .contact-container {
+  background-color: #d4a238;
+  color: rgb(0, 0, 0);
+}
+
+body.dark-mode .contact-container button {
+  background-color: #0056b3; 
+}
+
+body.dark-mode .contact-container button:hover {
+  background-color: #007BFF;
+}
+
+body {
+  background: #e0e5ec;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-7 {
+  background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover {
+  color: rgba(251, 75, 2, 1);
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+
+.btn-details:hover {
+  color: #0000FF;
+
+}
+
+
+
+
+
+
+

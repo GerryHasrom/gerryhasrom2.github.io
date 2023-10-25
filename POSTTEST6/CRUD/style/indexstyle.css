@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2B138;
+    height: 100vh;
+    width: 100%;
+    margin: 45px;
+    padding: 45px;
+}
+
+.cool-card {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.input-container {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cool-card form {
+    display: block;
+}
+
+.input-container label {
+    color: #eee;
+    font-family: sans-serif;
+}
+
+.input-container input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    color: #333;
+}
+
+.title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+    margin-top: 30px;
+}
+
+.c7 {
+    border: none;
+    margin-top: 30px;
+}
+
+.form-label {
+    color: #eee;
+}
+
+.c8, .c9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.button {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #eee;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+/* Gunakan class .button pada kedua elemen */
+.c8 .button, .c9 .button {
+    width: 25%;
+}
+
+.input-container.c7 input[type="file"] {
+    color: white;
+}
+
+.table-container td a.edit-link,
+.table-container td a.delete-link {
+    color: #5c19fa; /* Warna tautan aslinya */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* CSS untuk animasi hover */
+.table-container td a.edit-link:hover,
+.table-container td a.delete-link:hover {
+    color: #ffee00; /* Ganti warna saat dihover */
+}
+
+.inputcreate-button-container {
+    margin-top: 30px;
+}
+
+.input-container.c3 {
+    display: block;
+}
